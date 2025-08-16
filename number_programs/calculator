@@ -1,0 +1,25 @@
+class Maths:
+
+    # parameterized constructor
+    def __init__(self, fnum, snum):  # self is default parameter and is mandatory
+        self.first = fnum
+        self.second = snum
+        self.answer1 = 0
+        self.answer2 = 0
+        self.answer3 = 0
+
+    def Display(self):
+        print("first number = " + str(self.first))
+        print("second number = " + str(self.second))
+        print("result of addition = " + str(self.answer1))
+        print("result of subtraction= " + str(self.answer2))
+        print("result of multiplication = " + str(self.answer3))
+
+    def Add(self):
+        self.answer1 = int(self.first) + int(self.second)
+
+    def Sub(self):
+        self.answer2 = int(self.first) - int(self.second)
+
+    def Multiply(self):
+        self.answer3 = int(self.first) * int(self.second)
